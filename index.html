@@ -5,199 +5,221 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy — Americas Cardroom</title>
   <meta name="description" content="Privacy Policy for Americas Cardroom — offline app. No data collection." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg: #f7fafc;
+    :root {
+      --bg: #f5f7fa;
       --card: #ffffff;
+      --accent: #007bff;
+      --text: #1f2937;
       --muted: #6b7280;
-      --accent: #0ea5a4;
-      --maxw: 900px;
-      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      --radius: 18px;
+      font-family: 'Poppins', sans-serif;
     }
-    html,body{height:100%;}
-    body{
-      margin:0; background:var(--bg); color:#0f172a; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; padding:40px 20px;
-      display:flex; align-items:flex-start; justify-content:center;
+    body {
+      background: var(--bg);
+      margin: 0;
+      color: var(--text);
+      line-height: 1.7;
+      display: flex;
+      justify-content: center;
+      padding: 60px 20px;
     }
-    .container{max-width:var(--maxw); width:100%;}
-    .card{background:var(--card); border-radius:12px; padding:32px; box-shadow:0 6px 24px rgba(2,6,23,0.06);}
-    header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
-    h1{font-size:20px;margin:0}
-    .meta{color:var(--muted);font-size:14px}
-    nav{margin:18px 0}
-    nav a{margin-right:12px;color:var(--accent);text-decoration:none;font-weight:600}
-    section{margin-bottom:20px}
-    h2{font-size:16px;margin:0 0 8px}
-    p, ul{line-height:1.6;color:#0f172a}
-    ul{padding-left:20px}
-    code{background:#f1f5f9;padding:2px 6px;border-radius:6px;font-family:monospace}
-    .note{background:#f8fafc;border-left:4px solid #c7f9f6;padding:12px;border-radius:6px;color:#064e47}
-    footer{border-top:1px solid #eef2f7;padding-top:16px;color:var(--muted);font-size:13px}
-    @media(print){
-      body{padding:0}
-      .card{box-shadow:none;border-radius:0}
+    .policy-container {
+      background: var(--card);
+      max-width: 900px;
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      padding: 50px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .policy-container::before {
+      content: '';
+      position: absolute;
+      top: -150px;
+      right: -150px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+      opacity: 0.1;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    header p {
+      color: var(--muted);
+      font-size: 1rem;
+      margin-top: 8px;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--accent);
+      background: rgba(0,123,255,0.08);
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+    nav a:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+    section {
+      margin-bottom: 35px;
+    }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+    p, li {
+      color: var(--text);
+      font-size: 1rem;
+    }
+    ul {
+      padding-left: 20px;
+      margin-top: 6px;
+    }
+    .highlight {
+      background: rgba(0,123,255,0.06);
+      padding: 12px 16px;
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+      color: var(--text);
+      margin-top: 10px;
+    }
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <article class="card">
-      <header>
-        <div>
-          <h1>Privacy Policy — Americas Cardroom</h1>
-          <div class="meta">This Privacy Policy describes how <strong>[Company Name]</strong> collects, uses, and protects information when you use the mobile application <strong>Americas Cardroom</strong>.</div>
-        </div>
-      </header>
+  <div class="policy-container">
+    <header>
+      <h1>Privacy Policy</h1>
+      <p>Americas Cardroom — Your privacy, fully protected.</p>
+    </header>
 
-      <nav>
-        <a href="#overview">Overview</a>
-        <a href="#info-we-do-not-collect">We Do Not Collect</a>
-        <a href="#local-storage">Local Storage</a>
-        <a href="#permissions">Permissions</a>
-        <a href="#no-internet">No Internet</a>
-        <a href="#no-ads">No Ads</a>
-        <a href="#children">Children</a>
-        <a href="#rights">Your Rights</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#info">No Data Collected</a>
+      <a href="#storage">Local Storage</a>
+      <a href="#permissions">Permissions</a>
+      <a href="#internet">Offline Mode</a>
+      <a href="#ads">No Ads</a>
+      <a href="#children">Children</a>
+      <a href="#rights">User Rights</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-      <section id="overview">
-        <h2>1. Overview</h2>
-        <p>
-          Americas Cardroom is designed to operate entirely offline. The App does not collect, store, transmit, or share any personal or sensitive information.
-        </p>
-        <p>
-          All gameplay data, preferences, and achievements are stored locally on your device and never sent to any external server or third party. We do not use analytics tools, ad networks, trackers, or cloud-based services of any kind.
-        </p>
-      </section>
+    <section id="overview">
+      <h2>1. Overview</h2>
+      <p>Americas Cardroom is designed to operate <strong>entirely offline</strong>. The App does not collect, store, transmit, or share any personal or sensitive information. All gameplay data, preferences, and achievements are stored locally on your device and never sent to any external server or third party.</p>
+      <p>We do not use analytics tools, ad networks, trackers, or cloud-based services of any kind.</p>
+    </section>
 
-      <section id="info-we-do-not-collect">
-        <h2>2. Information We Do Not Collect</h2>
-        <p>We do not collect or process any of the following types of data:</p>
-        <ul>
-          <li>Personal identifiers (such as name, email, address, or phone number)</li>
-          <li>Location data (GPS, IP-based, or otherwise)</li>
-          <li>Financial or payment information</li>
-          <li>Contacts or calendar data</li>
-          <li>Biometric information</li>
-          <li>Device identifiers, advertising IDs, or usage analytics</li>
-          <li>Any data stored on your device outside of the app’s own local sandbox</li>
-        </ul>
-        <p><strong>In short:</strong> the app cannot and does not access, transfer, or sell any user data.</p>
-      </section>
+    <section id="info">
+      <h2>2. Information We Do Not Collect</h2>
+      <ul>
+        <li>Personal identifiers (name, email, address, or phone number)</li>
+        <li>Location data (GPS, IP-based, or otherwise)</li>
+        <li>Financial or payment information</li>
+        <li>Contacts, calendar, or biometric data</li>
+        <li>Advertising IDs or usage analytics</li>
+        <li>Any data outside the app’s local sandbox</li>
+      </ul>
+      <div class="highlight">In short: the app cannot and does not access, transfer, or sell any user data.</div>
+    </section>
 
-      <section id="local-storage">
-        <h2>3. Local Data Storage</h2>
-        <p>
-          All data generated by the app (such as scores, preferences, achievements, and unlocks) is saved locally on your device’s internal storage.
-        </p>
-        <p>
-          You may delete this data at any time by uninstalling the application or using your device’s system settings to clear app storage. This data never leaves your device and is not visible or accessible to us.
-        </p>
-      </section>
+    <section id="storage">
+      <h2>3. Local Data Storage</h2>
+      <p>All app data — including preferences, achievements, and unlocks — is stored securely on your device’s internal storage. You may delete it anytime via system settings or by uninstalling the app. No data ever leaves your device.</p>
+    </section>
 
-      <section id="permissions">
-        <h2>4. Permissions</h2>
-        <p>The App requests no sensitive permissions. It does not access contacts, photos, microphone, camera, files, or location.</p>
-        <p>Some optional permissions may be used only for:</p>
-        <ul>
-          <li>Local storage — to save user progress and configuration files;</li>
-          <li>Notifications — for local reminders (if enabled manually by the user).</li>
-        </ul>
-        <p>
-          All permissions remain optional and may be disabled at any time in your device’s settings. Disabling them will not affect core functionality.
-        </p>
-      </section>
+    <section id="permissions">
+      <h2>4. Permissions</h2>
+      <p>The App requests <strong>no sensitive permissions</strong>. It does not access contacts, photos, microphone, camera, or location.</p>
+      <ul>
+        <li>Local storage — used only for saving progress.</li>
+        <li>Notifications — optional local reminders (enabled manually).</li>
+      </ul>
+      <p>All permissions are optional and can be disabled without affecting core functionality.</p>
+    </section>
 
-      <section id="no-internet">
-        <h2>5. No Internet Connectivity</h2>
-        <p>
-          Americas Cardroom is a fully offline experience. The App does not connect to the Internet, does not send or receive data, and does not interact with any third-party APIs or web services. All features, including statistics, story content, and challenges, work without an Internet connection.
-        </p>
-      </section>
+    <section id="internet">
+      <h2>5. No Internet Connectivity</h2>
+      <p>The app operates completely offline. It does not connect to the Internet, send or receive data, or interact with third-party APIs. All features — including gameplay, stats, and story — function without connectivity.</p>
+    </section>
 
-      <section id="no-ads">
-        <h2>6. No Ads, No Tracking, No Purchases</h2>
-        <p>The App contains:</p>
-        <ul>
-          <li>No advertisements (including personalized or contextual ads)</li>
-          <li>No analytics or telemetry</li>
-          <li>No in-app purchases</li>
-          <li>No social sharing or online components</li>
-        </ul>
-        <p>Your experience is 100% private and free from any external tracking or monetization.</p>
-      </section>
+    <section id="ads">
+      <h2>6. No Ads, No Tracking, No Purchases</h2>
+      <ul>
+        <li>No advertisements</li>
+        <li>No analytics or telemetry</li>
+        <li>No in-app purchases</li>
+        <li>No social sharing or online components</li>
+      </ul>
+      <p>Your experience is 100% private and free from external tracking or monetization.</p>
+    </section>
 
-      <section id="children">
-        <h2>7. Children’s Privacy</h2>
-        <p>
-          The App is designed for a general audience and does not intentionally collect personal information from anyone, including children under the age of 13 (United States), under 16 (European Union), or under the age of majority in their jurisdiction.
-        </p>
-        <p>
-          Because the app does not collect or transmit data, it complies by design with the Children’s Online Privacy Protection Act (COPPA), the UK Age-Appropriate Design Code, and equivalent laws in the EU and Canada.
-        </p>
-      </section>
+    <section id="children">
+      <h2>7. Children’s Privacy</h2>
+      <p>The app is designed for a general audience and does not collect personal information from anyone, including children under 13 (US), under 16 (EU), or the local age of majority.</p>
+      <p>Because no data collection occurs, it complies with COPPA, the UK Age-Appropriate Design Code, and similar global laws.</p>
+    </section>
 
-      <section id="rights">
-        <h2>8. Your Rights (GDPR, CCPA, PIPEDA)</h2>
-        <p>
-          Although no personal data is collected, users are entitled under law to certain rights regarding privacy and information control. These rights include:
-        </p>
-        <ul>
-          <li><strong>Access and Portability:</strong> You may export your locally stored data within the app (e.g., backup/export feature).</li>
-          <li><strong>Correction and Deletion:</strong> You may delete all data by uninstalling the app or clearing its local storage.</li>
-          <li><strong>Transparency:</strong> You have the right to know exactly what data (if any) is collected — in this case, none.</li>
-        </ul>
-        <p>
-          Since we do not process or control any user data on external servers, these rights are fully respected by design.
-        </p>
-      </section>
+    <section id="rights">
+      <h2>8. Your Rights (GDPR, CCPA, PIPEDA)</h2>
+      <p>Although no data is collected, you retain full privacy rights, including:</p>
+      <ul>
+        <li><strong>Access & Portability:</strong> Export your data from within the app.</li>
+        <li><strong>Correction & Deletion:</strong> Delete data via settings or uninstalling.</li>
+        <li><strong>Transparency:</strong> You have full visibility — the app collects none.</li>
+      </ul>
+    </section>
 
-      <section id="data-retention">
-        <h2>9. Data Retention</h2>
-        <p>The App does not store data on our systems. All data exists only on your device and remains there until you choose to delete it. We cannot access, recover, or modify user data once deleted.</p>
-      </section>
+    <section>
+      <h2>9. Data Retention & Security</h2>
+      <p>The app stores data only on your device within Android’s sandbox. We cannot access, recover, or modify any user data. Please secure your device with screen lock, encryption, or biometric protection.</p>
+    </section>
 
-      <section id="security">
-        <h2>10. Security</h2>
-        <p>
-          The App operates within the Android sandbox environment, which isolates its data from other applications. No external transmission occurs.
-        </p>
-        <p>
-          Users are responsible for securing their devices (e.g., screen lock, encryption, or biometric protection) to prevent unauthorized local access.
-        </p>
-      </section>
+    <section id="contact">
+      <h2>10. Contact Us</h2>
+      <p>For privacy-related inquiries, contact:</p>
+      <p><strong>[Company Name]</strong><br>
+      Email: <a href="mailto:[contact@email.com]">[contact@email.com]</a><br>
+      Address: [Company Address, City, Country]</p>
+    </section>
 
-      <section id="changes">
-        <h2>11. Changes to This Policy</h2>
-        <p>
-          If this Privacy Policy is updated, the new version will be made available through the same listing (Google Play or official app website). We encourage you to review it periodically. Any significant change that introduces data collection will always be preceded by clear in-app consent and updated legal documentation.
-        </p>
-      </section>
+    <section>
+      <h2>Summary</h2>
+      <div class="highlight">Americas Cardroom was built with one principle: <strong>Your data stays yours.</strong><br>No accounts. No analytics. No tracking — just a private, offline experience dedicated to your focus and progress.</div>
+    </section>
 
-      <section id="contact">
-        <h2>12. Contact Us</h2>
-        <p>
-          For questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us at:
-        </p>
-        <p>
-          <strong>[Company Name]</strong><br />
-          Email: <a href="mailto:[contact@email.com]">[contact@email.com]</a><br />
-          Address: [Company Address, City, Country]
-        </p>
-      </section>
-
-      <section>
-        <h2>Summary</h2>
-        <p class="note">Americas Cardroom was built with a simple philosophy: <strong>your data stays yours.</strong> No accounts, no analytics, no tracking — just an offline experience dedicated entirely to your growth, focus, and progress.</p>
-      </section>
-
-      <footer>
-        <div>Last updated: <strong>October 22, 2025</strong></div>
-        <div style="margin-top:8px">If you would like us to replace the placeholders (<code>[Company Name]</code>, <code>[contact@email.com]</code>, <code>[Company Address]</code>) with real values, tell me the details and I will update the file.</div>
-      </footer>
-
-    </article>
+    <footer>
+      <p>© 2025 [Company Name]. All Rights Reserved.<br>Last updated: October 22, 2025</p>
+    </footer>
   </div>
 </body>
 </html>
